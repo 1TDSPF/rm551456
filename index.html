@@ -61,8 +61,10 @@
                 <fieldset>
                     <legend>Contato</legend>
                     <div>
-                        <label for="idEmail">Email</label>
-                        <input type="email" name="txtEmail" id="idEmail" placeholder="Email">
+                        <label for="idPass">Email</label>
+                        <input type="password" name="txtPass" id="idPass" placeholder="Pass" 
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Precisa conter no mínimo 8 caractéres e um em maiúsculo e pelo menos um em minúsculo.">
                     </div>
                     <div>
                         <label for="idNm">Nome</label>
