@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,51 +19,88 @@
             <a href="#">Item-3</a>
         </nav>
     </header>
-    
+
     <h2 class="tit-sec">Seção de Fotos</h2>
 
     <section class="conteudo">
         <div>
             <img src="./img/lobo1.jpg" alt="Lobo">
-        <p>Legenda</p>
+            <p>Legenda</p>
         </div>
-
         <div>
             <img src="./img/lobo2.jpg" alt="Lobo">
-        <p>Legenda</p>
+            <p>Legenda</p>
         </div>
-
         <div>
             <img src="./img/lobo3.jpg" alt="Lobo">
-        <p>Legenda</p>
+            <p>Legenda</p>
         </div>
-
         <div>
             <img src="./img/lobo4.jpg" alt="Lobo">
-        <p>Legenda</p>
+            <p>Legenda</p>
         </div>
-
         <div>
             <img src="./img/lobo5.jpg" alt="Lobo">
-        <p>Legenda</p>
+            <p>Legenda</p>
         </div>
-
         <div>
             <img src="./img/lobo6.jpg" alt="Lobo">
-        <p>Legenda</p>
+            <p>Legenda</p>
         </div>
-
     </section>
 
-        <footer class="rodape">
-            <h2>Fale Conosco</h2>
-            <nav>
-                <a href="#"><img src="./img/social-1.png" alt="GitHub"></a>
-                <a href="#"><img src="./img/social-2.png" alt="Facebook"></a>
-                <a href="#"><img src="./img/social-3.png" alt="Twitter"></a>
-            </nav>
-        </footer>
+    <footer class="rodape">
+        <h2>Fale Conosco</h2>
+        <nav>
+            <!-- <a href="#"><img src="./img/social-1.png" alt="Logo github"></a>
+            <a href="#"><img src="./img/social-2.png" alt="Logo facebook"></a>
+            <a href="#"><img src="./img/social-3.png" alt="Logo twitter"></a> -->
+        </nav>
+        <div>
+            <form action="index.html" method="GET" onsubmit="return true">
+                <fieldset>
+                    <legend>Contato</legend>
+                    <div>
+                        <label for="idEmail">Email</label>
+                        <input type="email" name="txtEmail" id="idEmail" placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="idNm">Nome</label>
+                        <input type="text" name="txtNm" id="idNm" placeholder="Nome">
+                    </div>
+                    <div>
+                        <label for="idGrava">Gravar Dados</label>
+                        <input type="checkbox" name="chbGrava" id="idGrava" value="gravar">
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Genêro</legend>
+                            <label for="idRdbM">Masculino</label>
+                            <input type="radio" name="rdb" id="idRdbM" value="m" checked="checked">
+                            <label for="idRdbF">Feminino</label>
+                            <input type="radio" name="rdb" id="idRdbF" value="f">
+                            <label for="idRdbO">Outros</label>
+                            <input type="radio" name="rdb" id="idRdbO" value="o">
+                        </fieldset>
+                    </div>
+                    <div>
+                        <label for="idGenero">Gênero</label>
+                        <select name="selGenero" id="idGenero">
+                            <option value="">Selecione uma opção</option>
+                            <option value="m">Masculino</option>
+                            <option value="f">Feminino</option>
+                            <option value="o">Outros</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </footer>
 
 </body>
-  
+
 </html>
