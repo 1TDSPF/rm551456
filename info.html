@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFO</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <img src="./img/logo.png" alt="Monitor de computador.">
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./info.html">Info</a>
+            <a href="#">Item-3</a>
+        </nav>
+    </header>
+
+    <h2 class="tit-sec">INFORMATIVO SOBRE OS LOBOS</h2>
+
+    <section class="conteudo">
+        <div>
+            <img src="./img/lobo1.jpg" alt="Lobo">
+            <p>Espécies ameaçadas</p>
+        </div>
+    </section>
+
+    <table>
+    <thead>
+        <tr>
+            <th>Nome Científico</th>
+            <th>Espécie</th>
+            <th>Habitat</th>
+            <th>Pelagem</th>
+            <th>Incidência</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Canis Lupus</th>
+            <th>Canídeo</th>
+            <th>Florestas</th>
+            <th>Cinzenta</th>
+            <th>América do Norte</th>
+        </tr>
+        <tr>
+            <td>Chrysocyon brachyurus</td>
+            <td>Canídeo</td>
+            <td>Cerrado e Pampas</td>
+            <td>Marron</td>
+            <td>America do Sul</td>
+        </tr>
+        <tr>
+            <td>Vulpes vulpes</td>
+            <td>Canídeo</td>
+            <td>Tundra</td>
+            <td>Marron</td>
+            <td>America do Norte / Europa /Ásia</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">A</td>
+            <td>C</td>
+            <td>D</td>
+            <td rowspan="2">E</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+    </tfoot>
+    </table>
+
+    <footer class="rodape">
+        <h2>Fale Conosco</h2>
+        <nav>
+        </nav>
+        <div>
+            <form action="index.html" method="GET" onsubmit="return true">
+                <fieldset>
+                    <legend>Contato</legend>
+                    <div>
+                        <label for="idPass">Senha</label>
+                        <input type="password" name="txtPass" id="idPass" placeholder="Pass"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Precisa conter no mínimo 8 caractéres e um em maiusculo e pelo menos um em minusculo.">
+
+                    </div>
+                    <div>
+                        <label for="idNm">Nome</label>
+                        <input type="text" name="txtNm" id="idNm" placeholder="Nome">
+                    </div>
+                    <div>
+                        <label for="idGrava">Gravar Dados</label>
+                        <input type="checkbox" name="chbGrava" id="idGrava" value="gravar">
+                    </div>
+                    <div>
+                        <label for="idGenero">Genêro</label>
+                        <select name="selGenero" id="idGenero">
+                            <option selected="selected" value="-">Selecione uma opção</option>
+                            <option value="m">Masculino</option>
+                            <option value="f">Feminino</option>
+                            <option value="o">Outros</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </footer>
+
+</body>
+
+</html>
