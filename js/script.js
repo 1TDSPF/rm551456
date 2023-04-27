@@ -1,7 +1,7 @@
 var nome = "Guilherme";
 
 if(nome == "Guilherme"){
-    var nome = "Naoki"
+    var nome = "Naoki";
 }
 
 console.log();
