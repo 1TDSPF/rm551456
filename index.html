@@ -7,6 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My-Layout</title>
     <link rel="stylesheet" href="./css/estilo.css">
+    
+    <!-- <script>
+        //COMENTÁRIO DE LINHA
+        /*
+            COMENTÁRIO DE BLOCO
+        */
+
+        //Declarando variáveis com a palavra reservada var.
+        var nr1 = 10;
+        var nr2 = 5;
+
+        //Realizando a soma dos valores direto!
+        console.log(nr1+nr2);
+
+        //Declarando variáveis com a palavra reservada var.
+        var nr3 = "10";
+        var nr4 = "5";
+
+        //Realizando a soma dos valores direto!
+        console.log(nr3+nr4);
+        //Utilizando uma função interna de parseamento
+        console.log( parseInt(nr3) + parseInt(nr4));
+
+        //Realizando a subtração dos valores direto!
+        console.log("RESULTADO : " + (parseInt(nr3) - parseInt(nr4)));
+
+    </script> -->
+
+    <script src="./js/script.js"></script>
+    
 </head>
 
 <body>
@@ -57,7 +87,7 @@
             <a href="#"><img src="./img/social-3.png" alt="Logo twitter"></a> -->
         </nav>
         <div>
-            <form action="index.html" method="GET" onsubmit="return true">
+            <form action="index.html" method="GET" onsubmit="return false">
                 <fieldset>
                     <legend>Contato</legend>
                     <div>
@@ -94,14 +124,47 @@
                             <option value="o">Outros</option>
                         </select>
                     </div>
-                    <div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpar">
+                    <div class="btn">
+                        <button onclick="document.write('Olá Mundo!')" type="submit">Login</button>
+                        <button type="reset">Limpar</button>
                     </div>
                 </fieldset>
             </form>
         </div>
     </footer>
+
+    <!--<script>
+        //COMENTÁRIO DE LINHA
+        /*
+            COMENTÁRIO DE BLOCO
+        */
+
+        //Declarando variáveis com a palavra reservada var.
+        var nr1 = 10;
+        var nr2 = 5;
+
+        //Realizando a soma dos valores direto!
+        console.log(nr1+nr2);
+
+        //Declarando variáveis com a palavra reservada var.
+        var nr3 = "10";
+        var nr4 = "5";
+
+        //Realizando a soma dos valores direto!
+        console.log(nr3+nr4);
+        //Utilizando uma função interna de parseamento
+        console.log( parseInt(nr3) + parseInt(nr4));
+        //Realizando a subtração dos valores direto!
+        console.log("RESULTADO DA SUBTRAÇÃO: " + (parseInt(nr3) - parseInt(nr4)));
+
+        //Realizando a divisão dos valores direto!
+        console.log("RESULTADO DA DIVISÃO: " + (parseInt(nr3) / parseInt(nr4)));
+
+        //Realizando o processo para recuperar o resto da divisão.
+        console.log(`RESTO DA DIVISÃO DE ${nr3} POR ${nr4} = ${(parseInt(nr3) % parseInt(nr4))}`);
+
+
+    </script> -->
 
 </body>
 

@@ -48,3 +48,102 @@ td[colspan], td[rowspan]{
     font-weight: 700;
 }
 
+/* tabela */
+
+table{
+    border-collapse: collapse;
+    margin: 5% auto;
+}
+
+td,th{
+    border:1px  solid #000000;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+
+tr:hover{
+    background-color: #de6666;
+}
+
+td{
+    text-align: left;
+}
+
+td[colspan], td[rowspan]{
+    background-color: #e5f50b;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* tabela */
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto;
+}
+
+.rodape > div{
+    display: flex;
+}
+.rodape div form{
+    margin: 0 auto;
+    width: 50%;
+    font-size: 2rem;
+}
+
+
+.rodape div form input[type=email],input[type=password]{
+    display: block;
+    width: 90%;
+    height: 30px;
+    margin: 0 auto 1.5% auto;
+}
+
+.rodape div form input[type=checkbox]{
+    margin: 2% auto;
+}
+
+.rodape div form select{
+    display: block;
+    margin: 0 auto 2% auto;
+    width: 40%;
+    height: 40px;
+
+}
+
+.rodape form div fieldset{
+    width: 90%;
+    margin: 2% auto;
+}
+
+.lbl-txt{
+    margin: auto 5%;
+}
+
+.btn{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.btn button{
+    width: 40%;
+    height: 40px;
+    margin: 0 1%;
+}
+
+.btn button:nth-child(even){
+    background-color: red;
+    color:#fff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+.btn button:nth-child(odd){
+    background-color: green;
+    color:#fff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
