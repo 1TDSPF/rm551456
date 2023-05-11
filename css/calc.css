@@ -1,0 +1,42 @@
+
+.calc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calc form{
+    display: flex;
+    flex-direction: column;
+}
+
+.visor-calc input{
+    width: 100%;
+    margin: 2% 0;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #dddddd;
+}
+
+.btn-calc{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-calc button{
+    flex-grow: 1;
+    flex-basis: 50px;
+    margin: 2%;
+}
+
+.oper-calc{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.oper-calc button{
+    flex-grow: 1;
+    flex-basis: 50px;
+    margin: 2%;
+}
