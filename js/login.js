@@ -1,23 +1,14 @@
-//CRIANDO OBJETOS
-const usuario1 = {
-    usuarioEmail : "jaul@email.com",
-    usuarioSenha : "12345",
-    usuarioGenero : "m",
-    gravarDados : true
-}
-
-const usuario2 = {
-    usuarioEmail : "bkzin@email.com",
-    usuarioSenha : "12345",
-    usuarioGenero : "m",
-    gravarDados : true
-}
-
 //CRIAR UMA LISTA DE OBJETOS
-let listaDeUsuarios = [];
-listaDeUsuarios.push(usuario1);
-listaDeUsuarios.push(usuario2);
-console.log(listaDeUsuarios);
+let listaDeUsuarios = [
+    {
+        nomeCompleto : "Guilherme Naoki Hirayama",
+        usuarioEmail : "rm551456@fiap.com.br",
+        usuarioSenha : "123456"
+    },
+];
+
+localStorage.setItem("listaUser", JSON.stringify(listaDeUsuarios));
+
 
 addEventListener("click", (evt)=>{
     
