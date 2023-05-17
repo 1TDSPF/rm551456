@@ -1,19 +1,20 @@
 function insereNumero(botao,visor) {
-    visor.value += botao.value;
+    
+    if(botao.value == "+" || botao.value == "-" || botao.value == "*" || botao.value == "/"){
+       
+        if(visor.value[visor.value.length-1] == "+" ||  visor.value[visor.value.length-1] == "-" || visor.value[visor.value.length-1] == "*" || visor.value[visor.value.length-1] == "/"){
+            visor.value.slice(visor.value.length-1);
+        }else{
+            visor.value += botao.value;
+        }
+
+    }else{
+        visor.value += botao.value;
+    }
+
 }
 
 function resultado(visor) {
-
-    let resultadoOperacao = 0;
-
-    visor.forEach((nr)=> {
-        if(nr == "+"){
-            resultadoOperacao += parseInt(nr);
-        }else if(nr == "-"){
-            resultadoOperacao -= parseInt(nr);
-        }
-        
-    });
-    console.log(resultadoOperacao);
-
+    visor.value = eval(visor.value);
 }
+
