@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My-Layout</title>
     <link rel="stylesheet" href="./css/estilo.css">
-    
+
     <!-- <script>
         //COMENTÁRIO DE LINHA
         /*
@@ -35,8 +35,8 @@
 
     </script> -->
 
-    <script src="./js/script.js"></script>
-    
+    <script src="./js/script.js" defer></script>
+
 </head>
 
 <body>
@@ -44,13 +44,19 @@
     <header class="cabecalho">
         <img src="./img/logo.png" alt="Monitor de computador.">
         <nav>
-            <a href="#">Item-1</a>
-            <a href="#">Item-2</a>
+            <a class="tit-sec" href="./index.html">Home</a>
+            <a href="./info.html">Info</a>
             <a href="#">Item-3</a>
         </nav>
     </header>
 
+    <h1 id="msg"></h1>
+    <img id="imgAvatar" width="5%">
+    <button id="btnSair">LOGOUT</button>
+
     <h2 class="tit-sec">Seção de Fotos</h2>
+
+    <button id="meu-btn"><span>CLICK</span></button>
 
     <section class="conteudo">
         <div>
@@ -82,23 +88,23 @@
     <footer class="rodape">
         <h2>Fale Conosco</h2>
         <nav>
-            <!-- <a href="#"><img src="./img/social-1.png" alt="Logo github"></a>
+            <a href="#"><img src="./img/social-1.png" alt="Logo github"></a>
             <a href="#"><img src="./img/social-2.png" alt="Logo facebook"></a>
-            <a href="#"><img src="./img/social-3.png" alt="Logo twitter"></a> -->
+            <a href="#"><img src="./img/social-3.png" alt="Logo twitter"></a>
         </nav>
         <div>
-            <form action="index.html" method="GET" onsubmit="return false">
+            <form action="index.html" method="POST" onsubmit="return false">
                 <fieldset>
-                    <legend>Contato</legend>
+                    <legend>Login</legend>
                     <div>
-                        <label for="idPass">Email</label>
-                        <input type="password" name="txtPass" id="idPass" placeholder="Pass" 
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                        title="Precisa conter no mínimo 8 caractéres e um em maiúsculo e pelo menos um em minúsculo.">
+                        <label class="lbl-txt" for="idEmail">Email</label>
+                        <input type="email" name="txtEmail" id="idEmail" placeholder="Email" required>
                     </div>
                     <div>
-                        <label for="idNm">Nome</label>
-                        <input type="text" name="txtNm" id="idNm" placeholder="Nome">
+                        <label class="lbl-txt" for="idPass">Senha</label>
+                        <input type="password" name="txtPass" id="idPass" placeholder="Pass"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Precisa conter no mínimo 8 caractéres e um em maiusculo e pelo menos um em minusculo.">
                     </div>
                     <div>
                         <label for="idGrava">Gravar Dados</label>
@@ -107,22 +113,13 @@
                     <div>
                         <fieldset>
                             <legend>Genêro</legend>
-                            <label for="idRdbM">Masculino</label>
-                            <input type="radio" name="rdb" id="idRdbM" value="m" checked="checked">
-                            <label for="idRdbF">Feminino</label>
-                            <input type="radio" name="rdb" id="idRdbF" value="f">
-                            <label for="idRdbO">Outros</label>
-                            <input type="radio" name="rdb" id="idRdbO" value="o">
-                        </fieldset>
-                    </div>
-                    <div>
-                        <label for="idGenero">Gênero</label>
                         <select name="selGenero" id="idGenero">
-                            <option value="">Selecione uma opção</option>
+                            <option selected="selected" value="-">Selecione uma opção</option>
                             <option value="m">Masculino</option>
                             <option value="f">Feminino</option>
                             <option value="o">Outros</option>
                         </select>
+                    </fieldset>
                     </div>
                     <div class="btn">
                         <button onclick="document.write('Olá Mundo!')" type="submit">Login</button>
@@ -133,7 +130,8 @@
         </div>
     </footer>
 
-    <!--<script>
+
+    <!-- <script>
         //COMENTÁRIO DE LINHA
         /*
             COMENTÁRIO DE BLOCO
@@ -162,7 +160,6 @@
 
         //Realizando o processo para recuperar o resto da divisão.
         console.log(`RESTO DA DIVISÃO DE ${nr3} POR ${nr4} = ${(parseInt(nr3) % parseInt(nr4))}`);
-
 
     </script> -->
 
